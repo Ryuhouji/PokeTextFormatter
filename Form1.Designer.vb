@@ -55,7 +55,7 @@ Partial Class Form1
         '
         Me.Label1.Location = New System.Drawing.Point(12, 182)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(254, 74)
+        Me.Label1.Size = New System.Drawing.Size(254, 91)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = resources.GetString("Label1.Text")
         '
@@ -112,7 +112,7 @@ Partial Class Form1
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(26, 23)
         Me.Button4.TabIndex = 6
-        Me.Button4.Text = "/p"
+        Me.Button4.Text = "\p"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
@@ -121,7 +121,7 @@ Partial Class Form1
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(26, 23)
         Me.Button5.TabIndex = 7
-        Me.Button5.Text = "/n"
+        Me.Button5.Text = "\n"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Button6
@@ -130,7 +130,7 @@ Partial Class Form1
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(26, 23)
         Me.Button6.TabIndex = 8
-        Me.Button6.Text = "/l"
+        Me.Button6.Text = "\l"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button7
@@ -146,7 +146,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(369, 251)
+        Me.ClientSize = New System.Drawing.Size(369, 270)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
@@ -157,7 +157,10 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(385, 309)
         Me.Name = "Form1"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Text = "Text Formatter"
         Me.ResumeLayout(False)
         Me.PerformLayout()

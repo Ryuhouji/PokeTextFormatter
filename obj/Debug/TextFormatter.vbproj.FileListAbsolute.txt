@@ -2,7 +2,6 @@ C:\Users\bcumm\source\repos\TextFormatter\bin\Debug\TextFormatter.exe.config
 C:\Users\bcumm\source\repos\TextFormatter\bin\Debug\TextFormatter.exe
 C:\Users\bcumm\source\repos\TextFormatter\bin\Debug\TextFormatter.pdb
 C:\Users\bcumm\source\repos\TextFormatter\bin\Debug\TextFormatter.xml
-C:\Users\bcumm\source\repos\TextFormatter\obj\Debug\TextFormatter.vbprojAssemblyReference.cache
 C:\Users\bcumm\source\repos\TextFormatter\obj\Debug\TextFormatter.Form1.resources
 C:\Users\bcumm\source\repos\TextFormatter\obj\Debug\TextFormatter.Resources.resources
 C:\Users\bcumm\source\repos\TextFormatter\obj\Debug\TextFormatter.vbproj.GenerateResource.cache
