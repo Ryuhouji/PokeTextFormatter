@@ -13,11 +13,13 @@
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-
-        If (TextBox1.Text.Length = 34) Then
-            Line = TextBox1.Text
-            RichTextBox1.Text += "    .string " + quote + Line + quote + Environment.NewLine
-            TextBox1.Text = ""
+        Label2.Text = "Char: " + TextBox1.TextLength.ToString
+        If (TextBox1.Text.Length >= 35) Then
+            TextBox1.ForeColor = Color.Red
+            Label2.ForeColor = Color.Red
+        ElseIf (TextBox1.Text.Length <= 34) Then
+            TextBox1.ForeColor = Color.Black
+            Label2.ForeColor = Color.ForestGreen
         End If
 
     End Sub
@@ -30,7 +32,7 @@
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         Line = TextBox1.Text
         If fresh = True Then
             RichTextBox1.Text = ""
@@ -45,46 +47,63 @@
         TextBox1.AcceptsReturn = False
     End Sub
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        Line = TextBox1.Text
-        If fresh = True Then
-            RichTextBox1.Text = ""
-            fresh = False
-        End If
+        If TextBox1.TextLength > 37 Then
+            MessageBox.Show("This text would overflow ingame. Please shorten it.", "Overflow Warning")
+        Else
+            Line = TextBox1.Text
+            If fresh = True Then
+                RichTextBox1.Text = ""
+                fresh = False
+            End If
 
-        RichTextBox1.Text += "    .string " + quote + Line + "$" + quote + Environment.NewLine
-        TextBox1.Text = ""
+            RichTextBox1.Text += "    .string " + quote + Line + "$" + quote + Environment.NewLine
+            TextBox1.Text = ""
+        End If
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Line = TextBox1.Text
-        If fresh = True Then
-            RichTextBox1.Text = ""
-            fresh = False
-        End If
+        If TextBox1.TextLength > 37 Then
+            MessageBox.Show("This text would overflow ingame. Please shorten it.", "Overflow Warning")
+        Else
+            Line = TextBox1.Text
+            If fresh = True Then
+                RichTextBox1.Text = ""
+                fresh = False
+            End If
 
-        RichTextBox1.Text += "    .string " + quote + Line + "\p" + quote + Environment.NewLine
-        TextBox1.Text = ""
+            RichTextBox1.Text += "    .string " + quote + Line + "\p" + quote + Environment.NewLine
+            TextBox1.Text = ""
+        End If
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Line = TextBox1.Text
-        If fresh = True Then
-            RichTextBox1.Text = ""
-            fresh = False
-        End If
+        If TextBox1.TextLength > 37 Then
+            MessageBox.Show("This text would overflow ingame. Please shorten it.", "Overflow Warning")
+        Else
+            Line = TextBox1.Text
+            If fresh = True Then
+                RichTextBox1.Text = ""
+                fresh = False
+            End If
 
-        RichTextBox1.Text += "    .string " + quote + Line + "\n" + quote + Environment.NewLine
-        TextBox1.Text = ""
+            RichTextBox1.Text += "    .string " + quote + Line + "\n" + quote + Environment.NewLine
+            TextBox1.Text = ""
+        End If
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Line = TextBox1.Text
-        If fresh = True Then
-            RichTextBox1.Text = ""
-            fresh = False
+        If TextBox1.TextLength > 37 Then
+            MessageBox.Show("This text would overflow ingame. Please shorten it.", "Overflow Warning")
+        Else
+            Line = TextBox1.Text
+            If fresh = True Then
+                RichTextBox1.Text = ""
+                fresh = False
+            End If
+
+            RichTextBox1.Text += "    .string " + quote + Line + "\l" + quote + Environment.NewLine
+            TextBox1.Text = ""
         End If
 
-        RichTextBox1.Text += "    .string " + quote + Line + "\l" + quote + Environment.NewLine
-        TextBox1.Text = ""
     End Sub
 End Class
